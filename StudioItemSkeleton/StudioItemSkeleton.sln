@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Core.StudioItemSkeleton", "Core.StudioItemSkeleton\Core.StudioItemSkeleton.shproj", "{DF8C14E3-BBD9-4983-9616-E40E8C901C25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KK.StudioItemSkeleton", "KK.StudioItemSkeleton\KK.StudioItemSkeleton.csproj", "{7B5FDBE3-D450-43C1-8988-D4511D27ED2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KKS.StudioItemSkeleton", "KKS.StudioItemSkeleton\KKS.StudioItemSkeleton.csproj", "{E5349E76-B20A-4356-99C9-354841CD9200}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B5FDBE3-D450-43C1-8988-D4511D27ED2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B5FDBE3-D450-43C1-8988-D4511D27ED2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B5FDBE3-D450-43C1-8988-D4511D27ED2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B5FDBE3-D450-43C1-8988-D4511D27ED2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5349E76-B20A-4356-99C9-354841CD9200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5349E76-B20A-4356-99C9-354841CD9200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5349E76-B20A-4356-99C9-354841CD9200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5349E76-B20A-4356-99C9-354841CD9200}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A003D89-FCB7-4F2B-96DB-57A7803A8AE4}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Core.StudioItemSkeleton\Core.StudioItemSkeleton.projitems*{7b5fdbe3-d450-43c1-8988-d4511d27ed2e}*SharedItemsImports = 4
+		Core.StudioItemSkeleton\Core.StudioItemSkeleton.projitems*{df8c14e3-bbd9-4983-9616-e40e8c901c25}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal
