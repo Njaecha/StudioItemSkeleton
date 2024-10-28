@@ -10,5 +10,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)StudioItemSkeleton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StudioItemSkeleton.Gizmos.cs" />
   </ItemGroup>
 </Project>

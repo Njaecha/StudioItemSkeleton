@@ -47,6 +47,9 @@
     <Reference Include="KKSAPI, Version=1.42.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\IllusionModdingAPI.KKSAPI.1.42.1\lib\net46\KKSAPI.dll</HintPath>
     </Reference>
+    <Reference Include="KKS_Screencap">
+      <HintPath>P:\Koikatsu_Sunshine\BepInEx\plugins\KKS_BepisPlugins\KKS_Screencap.dll</HintPath>
+    </Reference>
     <Reference Include="Sirenix.Serialization, Version=2.1.13.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\IllusionLibs.KoikatsuSunshine.UnityEngine.CoreModule.2019.4.9\lib\net46\Sirenix.Serialization.dll</HintPath>
     </Reference>
