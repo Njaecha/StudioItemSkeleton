@@ -35,6 +35,9 @@
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '|AnyCPU' ">
       <OutputPath>bin\\</OutputPath>
     </PropertyGroup>
+    <PropertyGroup>
+      <PostBuildEvent>copy "E:\Niko\Modding\Illusion Games Modding and Shit\GitHub\StudioItemSkeleton\StudioItemSkeleton\KK.StudioItemSkeleton\bin\Debug\KK.StudioItemSkeleton.dll" "P:\Koikatsu\BepInEx\Plugins\KK_StudioItemSkeleton.dll"</PostBuildEvent>
+    </PropertyGroup>
     <ItemGroup>
         <Reference Include="0Harmony, Version=2.9.0.0, Culture=neutral, processorArchitecture=MSIL">
           <HintPath>..\packages\IllusionLibs.BepInEx.Harmony.2.9.0\lib\net35\0Harmony.dll</HintPath>

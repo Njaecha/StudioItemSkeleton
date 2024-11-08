@@ -44,14 +44,21 @@ namespace StudioItemSkeleton
                 if (!(oci is OCIItem item) || !item.itemFKCtrl.isActiveAndEnabled) return;
                 GL.Begin(GL.LINES);
                 GL.Color(StudioItemSkeleton.GizmoColor.Value);
-                List<Transform> goBones = item.listBones.Select(bone => bone.guideObject.transformTarget).ToList();
+                if (item.listBones.IsNullOrEmpty())
+                {
+                    GL.End();
+                    return;
+                }
+                List<Transform> goBones = item.listBones.Select(bone => bone?.guideObject.transformTarget).ToList();
                 item.listBones.ForEach(bone =>
                 {
+                    if (bone == null || !bone.guideObject || !bone.guideObject.transformTarget) return;
                     Transform parent = bone.guideObject.transformTarget.parent;
-                    while (!goBones.Contains(parent))
+                    if (!parent) return;
+                    while (!goBones.Contains(parent) && parent)
                     {
                         parent = parent.parent;
-                        if (parent == item.objectItem.transform) return;
+                        if (!parent || parent == item.objectItem.transform) return;
                     }
                     GL.Vertex(bone.guideObject.transformTarget.position);
                     GL.Vertex(parent.position);
