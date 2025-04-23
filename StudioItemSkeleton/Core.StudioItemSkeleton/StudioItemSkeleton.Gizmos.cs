@@ -41,14 +41,9 @@ namespace StudioItemSkeleton
             
             StudioAPI.GetSelectedObjects().ToList().ForEach(oci =>
             {
-                if (!(oci is OCIItem item) || !item.itemFKCtrl.isActiveAndEnabled) return;
+                if (!(oci is OCIItem item) || !item.itemFKCtrl || !item.itemFKCtrl.isActiveAndEnabled || item.listBones.IsNullOrEmpty()) return;
                 GL.Begin(GL.LINES);
                 GL.Color(StudioItemSkeleton.GizmoColor.Value);
-                if (item.listBones.IsNullOrEmpty())
-                {
-                    GL.End();
-                    return;
-                }
                 List<Transform> goBones = item.listBones.Select(bone => bone?.guideObject.transformTarget).ToList();
                 item.listBones.ForEach(bone =>
                 {
