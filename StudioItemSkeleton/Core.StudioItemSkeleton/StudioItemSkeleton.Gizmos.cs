@@ -35,6 +35,7 @@ namespace StudioItemSkeleton
 
         private void OnPostRender()
         {
+            if (!Studio.Studio.optionSystem.lineFK) return;
             _gizmoMaterial.SetPass(0);
             GL.PushMatrix();
             GL.MultMatrix(Matrix4x4.identity);
